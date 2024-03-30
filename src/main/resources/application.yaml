@@ -1,0 +1,22 @@
+spring:
+  application:
+  name: SalesManagementSystem
+
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sales_managementdb
+    username: postgres
+    password: 44999911
+
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
